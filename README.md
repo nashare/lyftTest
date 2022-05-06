@@ -1,5 +1,5 @@
-#install
+# install
 nmp install
 
-#run
+# run
 node index.js
