@@ -5,12 +5,12 @@ const app = express();
 app.use(express.json());
 
 app.post('/test', (req, res) => {
-    const string_to_cut = req.body["string_to_cut"];
-    let result_string = "";
-    for (let i = 2; i <string_to_cut.length; i += 3) {
-        result_string += string_to_cut[i];
+    const stringToCut = req.body["string_to_cut"];
+    let resultString = "";
+    for (let i = 2; i <stringToCut.length; i += 3) {
+        resultString += stringToCut[i];
     }
-    res.json({ return_string: result_string });
+    res.json({ return_string: resultString });
 });
 
 app.listen(PORT, () => {
